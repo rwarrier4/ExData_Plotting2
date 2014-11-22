@@ -10,7 +10,7 @@ nei_year <- group_by(nei, year)
 ##summarize the data to calculate the total emissions by year
 nei_sum <- summarise(nei_year, tot_emissions = sum(Emissions))
 
-png("exdata-008/ExData_Plotting2/plot1.png")
+png("plot1.png")
 
 ##create the bar chart with the barplot function in Base R
 bp1 <- barplot(nei_sum$tot_emissions/1000, names=nei_sum$year, col = "Orange", ylim=c(0,8000), 

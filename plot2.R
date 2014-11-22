@@ -13,7 +13,7 @@ balt_year <- group_by(balt, year)
 ##summarize the data to calculate the total emissions by year
 balt_sum <- summarise(balt_year, tot_emissions = sum(Emissions))
 
-png("exdata-008/ExData_Plotting2/plot2.png")
+png("plot2.png")
 
 ##create the bar chart with the barplot function in Base R
 bp1 <- barplot(balt_sum$tot_emissions, names=balt_sum$year, col = "Orange", ylim=c(0,4000), 

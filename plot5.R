@@ -29,7 +29,7 @@ nei2_sum <- summarise(nei2_year, tot_emissions = sum(Emissions))
 ##Make the variables factors for the graph to display properly
 nei2_sum = transform(nei2_sum, year = factor(year))
 
-png("exdata-008/ExData_Plotting2/plot5.png")
+png("plot5.png")
 
 ##create a chart for Total Emissions from On-Road Vehicles in Baltimore
 g <- ggplot(nei2_sum, aes(x=year, y=tot_emissions)) + 

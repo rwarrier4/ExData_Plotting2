@@ -23,7 +23,7 @@ neiscc_sum <- summarise(neiscc1, tot_emissions = sum(Emissions))
 
 neiscc_sum = transform(neiscc_sum, year = factor(year))
 
-png("exdata-008/ExData_Plotting2/plot4.png")
+png("plot4.png")
 
 ##create a chart for Total Emissions by Coal across the United States
 g <- ggplot(neiscc_sum, aes(x=year, y=tot_emissions/1000)) + 

@@ -19,7 +19,7 @@ balt_sum <- summarise(balt_type, tot_emissions = sum(Emissions))
 balt_sum = transform(balt_sum, type = factor(type))
 balt_sum = transform(balt_sum, year = factor(year))
 
-png("exdata-008/ExData_Plotting2/plot3.png")
+png("plot3.png")
 
 ##create a chart for each type for Baltimore city
 g <- ggplot(balt_sum, aes(x=year, y=tot_emissions, group=type)) + facet_wrap(~type, nrow=2) + 

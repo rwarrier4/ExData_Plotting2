@@ -15,7 +15,7 @@ nei_sum <- mutate(nei_sum, county= ifelse(fips == "24510", "Baltimore", "LA"))
 ##Make the variables factors for the graph to display properly
 nei_sum = transform(nei_sum, year = factor(year))
 
-png("exdata-008/ExData_Plotting2/plot6.png")
+png("plot6.png")
 
 cbbPalette <- c("#0072B2", "#D55E00", "#000000", "#E69F00", "#56B4E9", "#009E73", "#F0E442", "#CC79A7")
 
